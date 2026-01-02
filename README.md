@@ -1,1 +1,0 @@
-# KStupid.github.io
