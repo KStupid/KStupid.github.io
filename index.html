@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karanjith_KJ_Terminal_v1.0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="crt-overlay"></div>
+
+    <div class="terminal-wrapper">
+        <header class="terminal-header">
+            <div class="sys-info">SYSTEM: LINUX | USER: KARANJITH KJ | DATE: 2026</div>
+        </header>
+
+        <nav class="ascii-nav">
+            <a href="#hero">[ HOME ]</a>
+            <a href="#about">[ ABOUT_ME ]</a>
+            <a href="#skills">[ SKILLS ]</a>
+            <a href="#contact">[ CONTACT ]</a>
+        </nav>
+
+        <main>
+            <section id="hero" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">whoami</span>
+                </div>
+                <div class="output-block">
+                    <h1 class="glitch-text">KARANJITH KJ</h1>
+                    <p>> CSE Student</p>
+                    <p>> Cyber Security Enthusiast</p>
+                    <p>> Tool Developer</p>
+                    <br>
+                    <p class="status-ok">[ SYSTEM ONLINE... WAITING FOR INPUT ]</p>
+                </div>
+            </section>
+
+            <section id="about" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">cat about.txt</span>
+                </div>
+                <div class="output-block text-body">
+                    <p>I am a dedicated Computer Science Engineering student with a passion for cyber security and developing innovative tools.</p>
+                    <p>My journey in technology is driven by curiosity and a desire to understand and build secure systems.</p>
+                    <p>I constantly explore new challenges in the cyber realm, combining academic knowledge with practical application to create impactful solutions.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">ls ./skills/</span>
+                </div>
+                <div class="output-block grid-output">
+                    <span class="file-item">python.py</span>
+                    <span class="file-item">linux_kernel.bin</span>
+                    <span class="file-item">cyber_security.sh</span>
+                    <span class="file-item">small_projects.zip</span>
+                </div>
+            </section>
+
+            <section id="contact" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">./connect.sh</span>
+                </div>
+                <div class="output-block link-list">
+                    <a href="mailto:karanjith2006@gmail.com" target="_blank">> EMAIL_PROTOCOL</a>
+                    <a href="https://github.com/KStupid" target="_blank">> GITHUB_REPO</a>
+                    <a href="https://pwn.college/hacker/97685" target="_blank">> PWN.COLLEGE_DB</a>
+                    <a href="https://www.linkedin.com/in/karanjith-kj-73aa5020a" target="_blank">> LINKEDIN_NETWORK</a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p class="attribution">:: Built with &#x2764; by Gemini CLI ::</p>
+            <p class="blink-cursor">_</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
