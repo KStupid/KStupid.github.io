@@ -1,118 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karanjith_KJ</title>
+    <title>Karanjith KJ | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <div class="scanlines"></div>
-    <div class="crt-overlay"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-    <div class="terminal-wrapper">
-        <header class="terminal-header">
-            <div class="sys-info">SYSTEM: LINUX | USER: KARANJITH KJ | DATE: 2026</div>
-        </header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Karanjith<span class="highlight">KJ</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        <nav class="ascii-nav">
-            <a href="#hero">[ HOME ]</a>
-            <a href="#about">[ ABOUT_ME ]</a>
-            <a href="#skills">[ SKILLS ]</a>
-            <a href="#projects">[ PROJECTS ]</a>
-            <a href="#contact">[ CONTACT ]</a>
-        </nav>
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section fade-in">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="gradient-text">Karanjith KJ</h1>
+                <h2 class="subtitle">CSE Student & Security Enthusiast</h2>
+                <p class="description">
+                    Passionate about building innovative tools, exploring cyber security, and diving deep into systems
+                    programming. Welcome to my digital space.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
 
-        <main>
-            <section id="hero" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">whoami</span>
-                </div>
-                <div class="output-block">
-                    <h1 class="glitch-text">KARANJITH KJ</h1>
-                    <p>> CSE Student</p>
-                    <p>> Cyber Security Enthusiast</p>
-                    <p>> Tool Developer</p>
-                    <br>
-                    <p class="status-ok">[ SYSTEM ONLINE... WAITING FOR INPUT ]</p>
-                </div>
-            </section>
+        <!-- About Section -->
+        <section id="about" class="about section fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card">
+                <p>I am a dedicated Computer Science Engineering student with an undying passion for cyber security and
+                    developing robust technological tools. My journey in technology is driven by a deep-rooted curiosity
+                    and an intrinsic desire to understand and build flawless, secure systems.</p>
+                <p>I constantly push boundaries, exploring new challenges in the cyber realm, combining academic
+                    knowledge with practical application to engineer highly impactful solutions.</p>
+            </div>
+        </section>
 
-            <section id="about" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">cat about.txt</span>
-                </div>
-                <div class="output-block text-body">
-                    <p>I am a dedicated Computer Science Engineering student with a passion for cyber security and developing innovative tools.</p>
-                    <p>My journey in technology is driven by curiosity and a desire to understand and build secure systems.</p>
-                    <p>I constantly explore new challenges in the cyber realm, combining academic knowledge with practical application to create impactful solutions.</p>
-                </div>
-            </section>
-
-            <section id="skills" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">ls ./skills/</span>
-                </div>
-                <div class="output-block grid-output">
-                    <span class="file-item">python.py</span>
-                    <span class="file-item">c.c</span>
-                    <span class="file-item">bash.sh</span>
-                    <span class="file-item">linux.sh</span>
-                    <span class="file-item">git.config</span>
-                    <span class="file-item">cyber_security.bin</span>
-                    <span class="file-item">systems_programming.exe</span>
-                </div>
-            </section>
-
-            <section id="projects" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">ls ./projects/</span>
-                </div>
-                <div class="output-block">
-                    <div class="project-item">
-                        <h3>> MeanReaver</h3>
-                        <p>A CLI tool to extract and analyze text from PDF documents to identify advanced vocabulary.</p>
-                        <p>Tech: Python, Spacy, PyMuPDF, APIs</p>
-                        <a href="https://github.com/KStupid/MeanReaver" target="_blank">[ SOURCE CODE ]</a>
-                    </div>
-                    <div class="project-item">
-                        <h3>> CEFR Subtitle Extension</h3>
-                        <p>A browser extension and FastAPI backend to automatically extract YouTube/Netflix subtitles and provide real-time definitions for difficult vocabulary.</p>
-                        <p>Tech: Python, FastAPI, JavaScript, spaCy</p>
-                        <a href="https://github.com/KStupid/cefr-subtitle-extension" target="_blank">[ SOURCE CODE ]</a>
-                    </div>
-                    <div class="project-item">
-                        <h3>> Subtitle CEFR Analyzer</h3>
-                        <p>A Command-Line utility that utilizes ffmpeg to extract .srt files from local videos and auto-plays modified media in mpv.</p>
-                        <p>Tech: Python, FFmpeg, spaCy, Threading</p>
-                        <a href="https://github.com/KStupid/subtitle-cefr-analyzer" target="_blank">[ SOURCE CODE ]</a>
+        <!-- Skills Section -->
+        <section id="skills" class="skills section fade-in">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3><i data-lucide="code-2"></i> Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Bash</span>
                     </div>
                 </div>
-            </section>
-
-            <section id="contact" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">root@karanjith-kj:~$</span> <span class="cmd-input">./connect.sh</span>
+                <div class="skill-category glass-card">
+                    <h3><i data-lucide="wrench"></i> Developer Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
                 </div>
-                <div class="output-block link-list">
-                    <a href="tel:9446829702">> PHONE_NETWORK</a>
-                    <a href="mailto:karanjith2006@gmail.com" target="_blank">> EMAIL_PROTOCOL</a>
-                    <a href="https://github.com/KStupid" target="_blank">> GITHUB_REPO</a>
-                    <a href="https://pwn.college/hacker/97685" target="_blank">> PWN.COLLEGE_DB</a>
-                    <a href="https://www.linkedin.com/in/karanjith-kj-73aa5020a" target="_blank">> LINKEDIN_NETWORK</a>
+                <div class="skill-category glass-card">
+                    <h3><i data-lucide="compass"></i> Core Interests</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Cyber Security</span>
+                        <span class="skill-tag">Systems Programming</span>
+                        <span class="skill-tag">Tool Development</span>
+                    </div>
                 </div>
-            </section>
-        </main>
-        
-        <footer>
-            <p class="attribution">:: (C) 1980 KARANJITH KJ & GEMINI CLI ::</p>
-            <p class="blink-cursor">_</p>
-        </footer>
-    </div>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="projects section fade-in">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>MeanReaver</h3>
+                        <p>An innovative CLI tool designed to extract and deeply analyze text from PDF documents to
+                            identify and index advanced vocabulary seamlessly.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Spacy</span>
+                            <span>PyMuPDF</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KStupid/MeanReaver" target="_blank" class="project-link">
+                            <i data-lucide="github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>CEFR Subtitle Extension</h3>
+                        <p>A powerful browser extension and FastAPI backend architected to automatically extract
+                            YouTube/Netflix subtitles, providing real-time definitions for high-level vocabulary.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>JavaScript</span>
+                            <span>spaCy</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KStupid/cefr-subtitle-extension" target="_blank"
+                            class="project-link">
+                            <i data-lucide="github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>Subtitle CEFR Analyzer</h3>
+                        <p>A high-performance Command-Line utility utilizing FFmpeg to extract .srt files from local
+                            videos, seamlessly integrating advanced NLP definition injections.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>FFmpeg</span>
+                            <span>spaCy</span>
+                            <span>Threading</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KStupid/subtitle-cefr-analyzer" target="_blank"
+                            class="project-link">
+                            <i data-lucide="github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section fade-in">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-grid">
+                <a href="tel:9446829702" class="contact-card glass-card">
+                    <i data-lucide="phone"></i>
+                    <span>+91 9446829702</span>
+                </a>
+                <a href="mailto:karanjith2006@gmail.com" target="_blank" class="contact-card glass-card">
+                    <i data-lucide="mail"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://github.com/KStupid" target="_blank" class="contact-card glass-card">
+                    <i data-lucide="github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/karanjith-kj-73aa5020a" target="_blank"
+                    class="contact-card glass-card">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://pwn.college/hacker/97685" target="_blank" class="contact-card glass-card">
+                    <i data-lucide="terminal"></i>
+                    <span>Pwn.college</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Karanjith KJ. Built with Passion & Code.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
